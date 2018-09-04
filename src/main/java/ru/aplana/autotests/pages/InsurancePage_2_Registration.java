@@ -66,6 +66,7 @@ public class InsurancePage_2_Registration extends BasePage {
         sendKeys(serie, serieValue);
         sendKeys(number, numberValue);
         sendKeys(issueDate, issueDateValue);
+        issueDate.sendKeys(Keys.TAB);
         sendKeys(issuePlace, issuePlaceValue);
     }
 
