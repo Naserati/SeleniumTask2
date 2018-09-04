@@ -1,6 +1,7 @@
 package ru.aplana.autotests.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -55,6 +56,7 @@ public class InsurancePage_2_Registration extends BasePage {
 
     public void fillInsurantFields(String birthDateValue, String nameValue, String surnameValue, String middlenameValue){
         sendKeys(birthDate, birthDateValue);
+        birthDate.sendKeys(Keys.TAB);
         sendKeys(name, nameValue);
         sendKeys(surname, surnameValue);
         sendKeys(middlename, middlenameValue);
