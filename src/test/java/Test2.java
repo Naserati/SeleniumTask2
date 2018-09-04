@@ -6,7 +6,7 @@ public class Test2 extends Hooks {
 
 
     @Test
-    public void test1() throws InterruptedException {
+    public void test1(){
         String insuredSurname = "Testov";
         String insuredName = "Test";
         String insuredBirthDate = "10.12.2000";
